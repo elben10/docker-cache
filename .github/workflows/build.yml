@@ -15,4 +15,5 @@ jobs:
             ${{ runner.os }}-buildx-
       - name: Build docker image
         run: |
+          docker buildx create
           docker buildx bake --set *.cache-from=type=local,src=/tmp/.buildx-cache --set *.cache-to=type=local,dest=/tmp/.buildx-cache
