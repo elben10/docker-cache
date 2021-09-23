@@ -1,4 +1,7 @@
 version: '3.8'
 services:
-  whoami:
-    image: traefik/whoami
+  test:
+    image: test
+    build:
+      context: .
+      dockerfile: Dockerfile
