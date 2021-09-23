@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   test:
-    image: test
+    image: ghcr.io/elben10/docker-cache/test:latest
     build:
       context: .
       dockerfile: Dockerfile
